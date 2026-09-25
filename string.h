@@ -1,0 +1,14 @@
+unsigned int strlen(char *s);
+char *strcpy(char *dst, char *src);
+char *strncpy(char *dst, char *src, unsigned int n);
+char *strcat(char *dst, char *src);
+char *strncat(char *dst, char *src, unsigned int n);
+int strcmp(char *a, char *b);
+int strncmp(char *a, char *b, unsigned int n);
+char *strchr(char *s, int c);
+char *strrchr(char *s, int c);
+char *strstr(char *hay, char *needle);
+void *memcpy(void *dst, void *src, unsigned int n);
+void *memmove(void *dst, void *src, unsigned int n);
+void *memset(void *dst, int c, unsigned int n);
+int memcmp(void *a, void *b, unsigned int n);
