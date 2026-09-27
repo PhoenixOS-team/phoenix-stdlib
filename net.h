@@ -6,3 +6,7 @@ char *Net_Resolve(char *host);
 long Net_Ping(char *hostOrIp, long timeoutMs);
 long Net_HttpGet(char *host, char *path, char *outBuf, long maxLen, long timeoutMs);
 long Net_HttpsGet(char *host, char *path, char *outBuf, long maxLen, long timeoutMs);
+long Net_HttpsGetBinary(char *host, char *path, char *outBuf, long maxLen, long timeoutMs, long *outLen);
+long Net_HttpsOpen(char *host, char *path, long timeoutMs, long *outStatus, long *outContentLength);
+long Net_HttpsReadChunk(long handle, char *buf, long maxLen);
+long Net_HttpsClose(long handle);
